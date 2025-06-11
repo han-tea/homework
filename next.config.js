@@ -2,6 +2,7 @@
 const nextConfig = {
   output: "export",
   basePath: "/pb_hantea",
+  assetPrefix: "/pb_hantea/",
   images: {
     unoptimized: true,
   },

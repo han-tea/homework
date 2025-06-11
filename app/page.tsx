@@ -105,7 +105,14 @@ export default function HanjiTeacherSite() {
     const mailtoLink = `mailto:hanji0601@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
       `이름: ${name}\n이메일: ${email}\n\n${message}`
     )}`
-    window.location.href = mailtoLink
+    
+    // Create a temporary link element
+    const link = document.createElement('a')
+    link.href = mailtoLink
+    link.style.display = 'none'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
