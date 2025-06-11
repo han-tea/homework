@@ -1,8 +1,8 @@
 /** @type {import("next").NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/pb_hantea",
-  assetPrefix: "/pb_hantea/",
+  basePath: "/homework",
+  assetPrefix: "/homework/",
   images: {
     unoptimized: true,
   },
